@@ -15,7 +15,7 @@ export default class Header extends Component {
       <div className="header">
         <div className="container">
           <Menu mode="horizontal" className="menu">
-            <img src={logo} className="logo"></img>
+            <img src={logo} className="logo" alt="logo"></img>
             <Menu.Item index="1">
               <Link to="/search" className="link">
                 Поиск
@@ -26,6 +26,7 @@ export default class Header extends Component {
                 Избранное
               </Link>
             </Menu.Item>
+            <span className="username">{this.props.username}</span>
             <Menu.Item index="3" className="logout">
               <Link to="/login" className="link" onClick={this.logOut}>
                 Выход

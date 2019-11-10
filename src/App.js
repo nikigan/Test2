@@ -142,9 +142,17 @@ export default class App extends Component {
   };
 
   render() {
+    let login = "";
+    if (this.state.loggedIn) {
+      login = this.userDB.find(
+        u => u.userToken === localStorage.getItem("userToken")
+      ).login;
+    }
     return (
       <Router>
-        {this.state.loggedIn && <Header onLogOut={this.auth} />}
+        {this.state.loggedIn && (
+          <Header onLogOut={this.auth} username={login} />
+        )}
         <Route
           path="/(search|)/"
           render={() => {

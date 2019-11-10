@@ -13,6 +13,12 @@
       height: 48px;
     }
 
+    .username {
+      display: block;
+      margin-left: auto;
+      text-transform: uppercase;
+      color: #000;
+    }
     .link {
       display: block;
       height: 100%;
@@ -20,7 +26,6 @@
     }
     .logout {
       display: block;
-      margin-left: auto;
     }
   }
 }
