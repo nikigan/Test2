@@ -1,0 +1,13 @@
+.text-container {
+  display: flex !important;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  .search-text {
+    display: flex;
+  }
+
+  .buttons {
+    display: flex;
+    margin-left: auto;
+  }
+}
