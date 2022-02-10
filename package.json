@@ -7,7 +7,7 @@
     "axios": "^0.19.0",
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
